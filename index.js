@@ -1,12 +1,12 @@
 const coinList = document.getElementById('list') // -> change it for table places
 
-const stripe = Stripe("pk_test_51LpDh5GTck0sdjJJB2jBz7La6RAo7wJrML0EEenMPzyNdHVGGgxv8kc5vEv9Wy9yy9wjY7AIEnz4Jo2zj8Tgdjvv00SyIxzIDb");
+// const stripe = Stripe("key");
 
 //iFrame
 const appearance = {
     theme: 'default',
 };
-elements = stripe.elements({ appearance, clientSecret: 'pi_3LpN6OGTck0sdjJJ3qk2PDzl_secret_PZ4EI0W264HiqirIrVmTOUE06' });
+// elements = stripe.elements({ appearance, clientSecret: 'key' });
 const paymentElement = elements.create("payment");
 paymentElement.mount("#payment-element");
 

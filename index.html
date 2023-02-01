@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Coin List</title>
+  </head>
+  <body>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- The form of search
+    <form class="example" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
+<Div>
+  <button id="CurentDateBtn">Curent Date</button>
+
+  <p id="CurentDate"></p>
+  
+ 
+</Div>
+    <div class="header">
+      <h1>MY coins</h1>
+      
+    </div>
+
+    <br/>
+
+    <!-- checkbox-->
+    <form>
+      <input type="checkbox" id="myCheck" onmouseover="resetPaymentForm()">
+      <span>Reset Payment</span>
+    </form>
+
+    <script>
+    function resetPaymentForm() {
+      document.getElementById("myCheck").click();
+      setLoading(false)
+    }
+    </script>
+<!-- checkbox finish-->
+
+
+    <table id="list">
+        <tr id="tableHeader">
+          <th>Favorite</th>
+          <th>Logo</th>
+          <th>Symbol</th>
+          <th>Coin</th>
+          <th>Price</th>
+          <th>24H % Change</th>
+          <th>To Buy</th>
+          <!-- <th>Buy Now</th> -->
+        </tr>
+<!--Java Script adds content here-->
+      </table>
+     	
+     <!-- Display a payment form -->
+     
+     <form id="payment-form">
+
+      <div id="payment-element">
+        <!--Stripe.js injects the Payment Element-->
+      </div>
+      
+      <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay now</span>
+      </button>
+      <div id="payment-message" class="hidden"></div>
+    </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+

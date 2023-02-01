@@ -1,6 +1,3 @@
-Phase-1-Project-Crypto-Tracker
-By: Yana & Mason
-
 -Pitch- Our API holds
 
 Project Requirments

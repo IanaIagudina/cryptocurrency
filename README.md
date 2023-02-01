@@ -1,5 +1,3 @@
--Pitch- Our API holds
-
 Project Requirments
 
 1. Must be HTML/CSS/JS frontend that accesses data from a public API or form a db.josn file using json-server.
